@@ -61,8 +61,10 @@ class MainActivity : AppCompatActivity() {
               intent.putExtra(KEY_RESULT_IMC, resultado)
               startActivity(intent)
 
+            //cores
+            //editText background + icone
+               //gradiente + titulo + desccrição
 
-               println("ação botão peso = " + resultado)
            }
         }
     }

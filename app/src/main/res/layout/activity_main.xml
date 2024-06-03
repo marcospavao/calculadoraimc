@@ -21,14 +21,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
+        app:hintEnabled="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edt_peso"
+            android:drawableEnd="@drawable/ic_weight"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:maxLength="6"
+            android:background="@drawable/rounded_bg"
             android:hint="Digite qual seu peso ex: 70.200"
             android:inputType="numberDecimal"/>
     </com.google.android.material.textfield.TextInputLayout>
@@ -37,14 +41,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
+        app:hintEnabled="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edt_altura"
+            android:drawableEnd="@drawable/ic_height"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:maxLength="6"
+            android:background="@drawable/rounded_bg"
             android:hint="Digite sua altura ex: 1.70"
             android:inputType="numberDecimal" />
     </com.google.android.material.textfield.TextInputLayout>
