@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         // recuperar os componentes EditText
         //criar uma variavel e associar o componente de UI<EditText>
         // recuperar o botao da tela
-        // colocar açao no botaoc
+        // colocar açao no botao
         // recuperar o texto digitado no edt peso
         //Sobre o float e o toString abaixo Em resumo, este código pega os valores de entrada dos campos de texto, que são strings,
         // e os converte para valores de ponto flutuante para que possam ser utilizados em cálculos
@@ -32,40 +32,40 @@ class MainActivity : AppCompatActivity() {
 
         btnCalcular.setOnClickListener {
             val pesoStr: String = edtPeso.text.toString()
-            val alturaStr: String  = edtAltura.text.toString()
+            val alturaStr: String = edtAltura.text.toString()
 
-           if (pesoStr == "" || alturaStr == ""){
-           //mostrar mensagem pra o usuario
-            Snackbar.make(
-                edtPeso,
+            if (pesoStr == "" || alturaStr == "") {
+                //mostrar mensagem pra o usuario
+                Snackbar.make(
+                    edtPeso,
                     "preencha todos os campos",
                     Snackbar.LENGTH_LONG
 
-            )
-                .show()
+                )
+                    .show()
 
-           } else {
+            } else {
 
-               val peso = pesoStr.toFloat()
-               val altura = alturaStr.toFloat()
+                val peso = pesoStr.toFloat()
+                val altura = alturaStr.toFloat()
 
-               val alturaQ2 = altura * altura
-               val resultado = peso / alturaQ2
+                val alturaQ2 = altura * altura
+                val resultado = peso / alturaQ2
 
-              //navegar para a proxiima tela
-               //criar o layout da proxima tela
-               //passar dados (resultado) para proxima tela
+                //navegar para a proxiima tela
+                //criar o layout da proxima tela
+                //passar dados (resultado) para proxima tela
 
-               // intent - classe do proprio android
-               val intent = Intent (this, ResultActivity::class.java)
-              intent.putExtra(KEY_RESULT_IMC, resultado)
-              startActivity(intent)
+                // intent - classe do proprio android
+                val intent = Intent(this, ResultActivity::class.java)
+                intent.putExtra(KEY_RESULT_IMC, resultado)
+                startActivity(intent)
 
-            //cores
-            //editText background + icone
-               //gradiente + titulo + desccrição
+                //cores
+                //editText background + icone
+                //gradiente + titulo + desccrição
 
-           }
+            }
         }
     }
 }

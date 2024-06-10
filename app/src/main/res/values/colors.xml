@@ -5,4 +5,10 @@
 
     <color name="primary_400">#cd00ea</color>
     <color name="primary_900">#5c00d2</color>
+
+    <color name="magreza">#0000FF</color>
+    <color name="normal">#008000</color>
+    <color name="sobrepeso">#FFA500</color>
+    <color name="obesidade">#FF0000</color>
+    <color name="procure_medico">#800080</color>
 </resources>
